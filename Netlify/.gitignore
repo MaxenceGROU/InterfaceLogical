@@ -1,0 +1,30 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables file
+.env
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build output
+.next/
+dist/
+build/
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Netlify
+.netlify/

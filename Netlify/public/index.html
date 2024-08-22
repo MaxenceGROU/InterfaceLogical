@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affichage des Données</title>
+</head>
+<body>
+  <h1>Affichage des Données de la Base</h1>
+  <div id="data"></div>
+
+  <script>
+    async function fetchData() {
+      try {
+        const response = await fetch('/api/get-data');
+        const data = await response.json();
+        const dataDiv = document.getElementById('data');
+        dataDiv.innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+      } catch (error) {
+        console.error('Erreur lors de la récupération des données :', error);
+      }
+    }
+
+    fetchData();
+  </script>
+</body>
+</html>

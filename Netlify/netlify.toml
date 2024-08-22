@@ -1,0 +1,11 @@
+[build]
+  # Définir le répertoire des fonctions serverless
+  functions = "netlify/functions"
+  
+  # Répertoire de construction pour les fichiers statiques (ajustez selon votre framework)
+  publish = "public"  # Pour une application React ou Vue.js, par exemple
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200

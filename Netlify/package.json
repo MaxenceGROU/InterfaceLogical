@@ -1,0 +1,13 @@
+{
+  "name": "my-netlify-project",
+  "version": "1.0.0",
+  "description": "A project for deploying serverless functions on Netlify",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify dev"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "mssql": "^8.1.0"
+  }
+}
